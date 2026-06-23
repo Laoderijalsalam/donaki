@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>donaki</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar__inner">
+        <a class="brand" href="#home" aria-label="Donaki home">
+          <img src="draft/drive-download-20260426T144505Z-3-001/logo.png" alt="donaki" />
+        </a>
+
+        <nav class="navigation" aria-label="Main navigation">
+          <a href="#home">HOME</a>
+          <a href="#partner">LINK <span>›</span></a>
+          <a href="#about">LINK <span>›</span></a>
+          <a href="#contact">CONTACT US</a>
+        </nav>
+
+        <div class="topbar__actions">
+          <button class="language" type="button">EN <span>›</span></button>
+          <button class="button button--login" type="button" onclick="openLoginDialog()">LOGIN</button>
+          <button class="button button--purple" type="button">REGISTER</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero__content">
+          <h1 id="hero-title">WHO ARE<br />WE?</h1>
+          <p>Donaki is dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+          <button class="button button--purple button--small" type="button">FIND MORE</button>
+        </div>
+      </section>
+
+      <div class="container page-sections">
+        <section class="cta-grid" id="partner" aria-label="Join Donaki">
+          <article class="cta-card cta-card--partner">
+            <span class="cta-card__word" aria-hidden="true">PARTNER</span>
+            <div>
+              <h2>BECOME A PARTNER</h2>
+              <p>Promote your offers through our platform.</p>
+              <button class="button button--light button--small" type="button">FIND OUT MORE</button>
+            </div>
+          </article>
+          <article class="cta-card cta-card--member">
+            <span class="cta-card__word" aria-hidden="true">MEMBER</span>
+            <div>
+              <h2>BECOME A MEMBER</h2>
+              <p>Become a close member of donaki.</p>
+              <button class="button button--light button--small" type="button">FIND OUT MORE</button>
+            </div>
+          </article>
+        </section>
+
+        <section class="about" id="about" aria-labelledby="about-title">
+          <div class="about__content">
+            <h2 id="about-title">ABOUT US</h2>
+            <p>Donaki is dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+          </div>
+        </section>
+
+        <section class="partners" aria-labelledby="partners-title">
+          <div class="partners__intro">
+            <h2 id="partners-title">SEE WHO ARE<br />OUR PARTNERS</h2>
+            <div class="partners__arrows" aria-label="Partner navigation">
+              <button type="button" aria-label="Previous partner"><img src="draft/drive-download-20260426T144505Z-3-001/icons/ChevronLeft.svg" alt="" /></button>
+              <button type="button" aria-label="Next partner"><img src="draft/drive-download-20260426T144505Z-3-001/icons/ChevronRight.svg" alt="" /></button>
+            </div>
+            <button class="button button--purple button--small" type="button">SEE OUR PARTNERS</button>
+          </div>
+          <div class="partner-list">
+            <div class="partner-logo"><img src="draft/drive-download-20260426T144505Z-3-001/partner-1.png" alt="Home Decor Collection" /></div>
+            <div class="partner-logo"><img src="draft/drive-download-20260426T144505Z-3-001/partner-2.png" alt="Diesel Denim Division" /></div>
+            <div class="partner-logo"><img src="draft/drive-download-20260426T144505Z-3-001/partner-3.png" alt="Zara" /></div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="container footer__inner">
+        <section class="footer__newsletter">
+          <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+          <form onsubmit="return handleNewsletter(event)">
+            <input type="email" aria-label="Email address" placeholder="Your e-mail" required />
+            <button class="button button--purple button--small" type="submit">SUBSCRIBE</button>
+          </form>
+          <p>Donaki is Luisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+        </section>
+        <section>
+          <h2>FOLLOW US</h2>
+          <div class="social-links">
+            <a href="#" aria-label="Pinterest"><img src="draft/drive-download-20260426T144505Z-3-001/icons/Pinterest.svg" alt="" /></a>
+            <a href="#" aria-label="Facebook"><img src="draft/drive-download-20260426T144505Z-3-001/icons/Facebook.svg" alt="" /></a>
+            <a href="#" aria-label="Blog"><img src="draft/drive-download-20260426T144505Z-3-001/icons/Blog.svg" alt="" /></a>
+            <a href="#" aria-label="Instagram"><img src="draft/drive-download-20260426T144505Z-3-001/icons/Instagram.svg" alt="" /></a>
+          </div>
+        </section>
+        <section>
+          <h2>CONTACT US</h2>
+          <p class="contact"><img src="draft/drive-download-20260426T144505Z-3-001/icons/LocationDot.svg" alt="" /><span>Rue de la Loi/Wetstraat 175<br />B-1048 Bruxelles/Brussel<br />Belgium/België</span></p>
+          <p class="contact"><img src="draft/drive-download-20260426T144505Z-3-001/icons/Phone.svg" alt="" /><span>Tel: +32 2 229 52 52</span></p>
+        </section>
+      </div>
+    </footer>
+
+    <dialog class="login-dialog" id="login-dialog" aria-labelledby="login-title">
+      <button class="dialog-close" type="button" aria-label="Close login dialog" onclick="closeLoginDialog()"><img src="draft/drive-download-20260426T144505Z-3-001/icons/Xmark.svg" alt="" /></button>
+      <div class="login-dialog__form">
+        <h2 id="login-title">Log in</h2>
+        <button class="button button--facebook" type="button"><img src="draft/drive-download-20260426T144505Z-3-001/icons/Facebook.svg" alt="" />LOG IN WITH FACEBOOK</button>
+        <form onsubmit="return handleLogin(event)">
+          <label>E-MAIL<input type="email" required /></label>
+          <label>PASSWORD<input type="password" required /></label>
+          <div class="login-options">
+            <label class="remember"><input type="checkbox" /> Remember me</label>
+            <a href="#">Forgotten your password?</a>
+          </div>
+          <button class="button button--teal" type="submit">CONNECT</button>
+        </form>
+        <p>Do not have an account?</p>
+        <button class="button button--purple button--subscribe" type="button">SUBSCRIBE</button>
+      </div>
+    </dialog>
+
+    <script src="main.js"></script>
+  </body>
+</html>

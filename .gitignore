@@ -1,0 +1,6 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Source archive; the extracted assets are tracked instead.
+draft/drive-download-20260426T144505Z-3-001.zip
