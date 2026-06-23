@@ -46,7 +46,7 @@ a { color: inherit; text-decoration: none; }
 .navigation a:hover, .language:hover { color: var(--purple); }
 .topbar__actions { display: flex; align-items: center; gap: 11px; }
 
-.hero { min-height: 433px; display: flex; align-items: center; background: url('asset/dashboard-intro-bg.png') center / cover no-repeat; }
+.hero { min-height: 360px; display: flex; align-items: center; background: url('asset/dashboard-intro-bg.png') center / cover no-repeat; }
 .hero__content { padding: 54px 18px; }
 .hero__content > * { max-width: 385px; }
 .hero h1 { margin: 0 0 18px; font-weight: 400; font-size: 49px; line-height: .94; letter-spacing: -.03em; }
