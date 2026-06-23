@@ -4,7 +4,7 @@ Landing page Donaki yang dibuat dengan HTML, CSS, dan JavaScript murni.
 
 ## Preview
 
-![Preview halaman Donaki](draft/donaki-landing_1.webp)
+![Preview halaman Donaki](preview.png)
 
 ## Fitur
 
