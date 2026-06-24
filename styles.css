@@ -93,7 +93,7 @@ a { color: inherit; text-decoration: none; }
 
 .login-dialog { width: 712px; max-width: calc(100% - 32px); min-height: 415px; padding: 0; border: 0; border-radius: 4px; overflow: hidden; background: #fff url('asset/login-bg.png') right / auto 100% no-repeat; box-shadow: 0 22px 64px rgba(0,0,0,.35); }
 .login-dialog::backdrop { background: rgba(0,0,0,.51); }
-.login-dialog__form { width: 466px; padding: 25px 64px 29px; text-align: center; }
+.login-dialog__form { width: 330px; margin: 0 auto; padding: 25px 64px 29px; text-align: center; }
 .login-dialog h2 { margin: 0 0 13px; font-size: 29px; font-weight: 400; }
 .login-dialog form { margin-top: 18px; text-align: left; }
 .login-dialog form > label { display: block; padding: 9px 7px 2px; border-bottom: 1px solid #eee; color: #777; font-size: 11px; }
@@ -105,7 +105,7 @@ a { color: inherit; text-decoration: none; }
 .remember input { appearance: none; width: 10px; height: 10px; margin: 0; border: 1px solid #777; }
 .remember input:checked { background: var(--purple); }
 .login-dialog__form > p { margin: 15px 0 7px; font-size: 12px; }
-.button--subscribe { min-width: 223px; padding: 10px; }
+.button--subscribe { width: 100%; min-width: 0; padding: 10px; }
 .dialog-close { position: absolute; z-index: 2; top: 12px; right: 14px; width: 21px; height: 21px; padding: 0; border: 0; background: transparent; }
 .dialog-close img { width: 15px; height: 15px; }
 
